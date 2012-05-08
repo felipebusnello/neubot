@@ -480,8 +480,8 @@ class Connector(Pollable):
                     self.sock.recv(MAXBUF)
                 except socket.error, exception2:
                     exception = exception2
-            LOG.error("* Connection to %s failed: %s" % (self.endpoint,
-              exception))
+            logging.error("* Connection to %s failed: %s", self.endpoint,
+              exception)
             self._connection_failed()
             return
 
@@ -706,7 +706,7 @@ def main(args):
             system.change_dir()
             system.go_background()
             LOG.redirect()
-        system.drop_privileges(LOG.error)
+        system.drop_privileges(logging.error)
         conf["net.stream.server_side"] = True
         handler.listen(endpoint)
     else:
