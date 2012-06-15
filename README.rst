@@ -21,7 +21,7 @@ harvested and published on M-Lab website under the terms and conditions
 of Creative Commons Zero license, allowing anyone to analyze them
 for research purposes <http://measurementlab.net/data>.
 
-The published dataset contains samples from portions of the network
+The published dataset contains samples from the portions of the Network
 where Neubot is installed.  And, theorically, given enough Neubots
 installed worldwide, it should be possible to map significant subset
 of the Internet.  As such, the success of the project relies on the
